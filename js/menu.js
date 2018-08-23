@@ -16,6 +16,7 @@ class MenuConstructor {
   }
 let mainMenu = document.querySelectorAll('.menu');
 mainMenu = Array.from(mainMenu).map( mainMenuArray => new MenuConstructor(mainMenuArray));
+
 document.querySelectorAll('.menu-open', '.menu-close').addEventListener('click',
 function() {
   document.querySelector('header').classList.toggle('hidden-background')
