@@ -162,6 +162,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.container p {
+  line-height: 2.4rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
 @media ( max-width: 500px ) {
   .container {
     max-width: 500px;
@@ -170,89 +175,50 @@ p {
 }
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  top: 0;
   height: 50px;
   background: #99A4AF;
-  flex-direction: row;
   width: 100%;
-  align-items: center;
-  z-index: 3;
-  justify-content: center;
+  z-index: 2;
 }
 header .header-content {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 82%;
   max-width: 1024px;
 }
 header .header-content h1 {
-  display: flex;
-  justify-content: flex-start;
   font-size: 2.3rem;
   font-weight: bold;
-  padding-left: 82px;
   color: white;
 }
-@media ( max-width: 500px ) {
-  header .header-content h1 {
-    padding-left: 15px;
-  }
-}
-header .header-content .menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 82px;
-}
-@media ( max-width: 500px ) {
-  header .header-content .menu {
-    padding-right: 11px;
-  }
-}
-header .header-content .menu .menu-button {
+.menu .menu-close {
   cursor: pointer;
-  display: flex;
+}
+@media ( max-width: 500px ) {
+  .menu .menu-close {
+    padding-right: 15px;
+  }
+}
+.menu .menu-open {
+  cursor: pointer;
 }
 .menu .menu-content {
-  z-index: 1;
+  z-index: -1;
   position: fixed;
   display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: #99A4AF;
   opacity: 0.9;
-}
-.menu .menu-content .menu-header {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  padding-top: 24px;
-  max-width: 1024px;
-  width: 100%;
-}
-@media ( max-width: 500px ) {
-  .menu .menu-content .menu-header {
-    padding: 13px 15px 0 15px;
-  }
-}
-.menu .menu-content .menu-header .menu-close {
-  cursor: pointer;
-  padding-right: 82px;
-}
-@media ( max-width: 500px ) {
-  .menu .menu-content .menu-header .menu-close {
-    padding-right: 15px;
-  }
+  top: 0;
+  left: 0;
 }
 .menu .menu-content nav {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   line-height: 10rem;
   margin: auto;
@@ -266,8 +232,8 @@ header .header-content .menu .menu-button {
 .menu .menu-content nav a:hover {
   color: #222222;
 }
-.menu .menu-hidden {
-  display: none;
+.menu .hidden {
+  display: none ;
 }
 .home h3 {
   font-size: 2.4rem;
@@ -570,6 +536,14 @@ footer {
   background: #828282;
   color: white;
 }
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+  line-height: 2.4;
+}
 @media ( max-width: 500px ) {
   footer {
     height: 100%;
@@ -640,7 +614,7 @@ footer .contact .contact-form h5 {
 footer .copyright {
   display: flex;
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 17px;
 }
 footer .copyright p {
   font-size: 1.2rem;
