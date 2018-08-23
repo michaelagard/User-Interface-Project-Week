@@ -67,12 +67,24 @@
                     @media @phone {
                         padding-top: 35px;
                         padding-bottom: 12px;
+                        width: 100%;
+                        h3 {
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                        }
+                        p {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
                     }
                     .button {
                         .btn(1.6rem,none,136px,47px, solid, 1px, black,0,white,black);
                         @media @phone {
                             .btn(1.6rem,none,100%,47px, solid, 1px, black,0,white,black);
                         }
+                    }
+                    .button:hover {
+                        background-color: @services-tab-selected-bg;
                     }
                     @media @phone {
                         width: 100%;
@@ -104,7 +116,9 @@
                     width: 50%;
                     padding: 2% 1.5%;
                     @media @phone {
+                        padding-top: 20px;
                         padding-left: 0px;
+                        width: 100%;
                     }
                 }
             }
@@ -131,6 +145,9 @@
                 }
                 .module-header-right:nth-child(3) {
                     .title-box(flex-end, -55px, 0, 0, 1px, 1px, 314px, 95px);
+                    @media @phone {
+                        .title-box(center, -10px, 0, 0, 1px, 1px, 300px, 95px);
+                    }
                 }
                 .module-header-left {
                     .title-box(flex-start, -55px, 0, 2px, 4px, 4px, 314px, 95px);
