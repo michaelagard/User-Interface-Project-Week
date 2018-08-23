@@ -32,6 +32,10 @@
         display: flex;
         justify-content: space-around;
         padding: 4.5% 8%;
+        @media @phone {
+            flex-direction: column;
+            padding: 10% 5%;
+        }
         h2 {
             font-size: 2.4rem;
             font-weight: bold;
@@ -40,6 +44,9 @@
             display: flex;
             flex-direction: column;
             width: 50%;
+            @media @phone {
+                width: 99%;
+            }
             p {
                 padding-bottom: 4px;
                 padding-left: 2px;
