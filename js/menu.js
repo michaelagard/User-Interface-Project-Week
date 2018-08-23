@@ -18,3 +18,5 @@ class MenuConstructor {
   }
 let mainMenu = document.querySelectorAll('.menu');
 mainMenu = Array.from(mainMenu).map( mainMenuArray => new MenuConstructor(mainMenuArray));
+console.log('Project by:')
+console.log('  __  __  ____    ____  \n |  |/ / |    \\\  |    | \n |     \\\ |     \\\ |    | \n |__|\\\__\\\|__|\\\__\\\|____| \n')
