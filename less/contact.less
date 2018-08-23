@@ -31,7 +31,7 @@
     .services-content {
         display: flex;
         justify-content: space-around;
-        padding: 4.5% 8%;
+        padding: 4.5% 8% 0 8%;
         @media @phone {
             flex-direction: column;
             padding: 10% 5%;
@@ -85,6 +85,9 @@
                 #needs {
                     width: 410px;
                     height: 135px;
+                    @media @phone {
+                        width: 100%;
+                    }
                 }
             }
             .radio-i-am-a {
@@ -96,6 +99,10 @@
             .button-submit {
                 margin-left: 2px;
                 .btn(1.6rem,none,136px,47px, solid, 1px, @home-button-border-color,0,white,black);
+                margin-bottom: 15%;
+            }
+            .button-submit:hover {
+                background-color: @services-tab-selected-bg;
             }
         }
         .right-column {
@@ -103,12 +110,19 @@
             flex-direction: column;
             align-items: center;
             width: 50%;
+            @media @phone {
+                width: 100%;
+                align-items: flex-start
+            }
             h3 {
                 font-size: 2.1rem;
                 font-weight: bold;
             }
             .work-locations {
                 padding: 11px 0 0 32px;
+                @media @phone {
+                    padding: 20% 0 0 0;
+                }
                 h2 {
                     padding-bottom: 36px;
                 }
