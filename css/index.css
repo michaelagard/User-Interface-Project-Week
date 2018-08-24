@@ -631,7 +631,6 @@ footer .contact address {
 footer .contact .contact-form {
   display: flex;
   flex-direction: column;
-  margin-right: -32px;
 }
 @media ( max-width: 500px ) {
   footer .contact .contact-form {
